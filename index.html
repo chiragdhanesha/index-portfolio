@@ -23,7 +23,7 @@
             box-sizing: border-box;
             font-family: 'Orbitron', 'Segoe UI', sans-serif;
         }
-        
+
         @font-face {
             font-family: 'Orbitron';
             src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
@@ -54,6 +54,17 @@
                 inset var(--glow) var(--primary);
             border-radius: 5px;
         }
+
+        .profile-hologram {
+  /* Keep existing styles (border, animation, etc.) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: var(--primary); /* Uses your cyan color */
+  text-shadow: 0 0 10px var(--primary); /* Glow effect */
+}
         
         .cyber-border::before {
             content: '';
